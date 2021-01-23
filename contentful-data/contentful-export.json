@@ -1,0 +1,1526 @@
+{
+  "contentTypes": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ojan3cf1nbzx"
+          }
+        },
+        "id": "menu",
+        "type": "ContentType",
+        "createdAt": "2020-10-17T12:08:48.829Z",
+        "updatedAt": "2021-01-16T05:50:11.679Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 9,
+        "publishedAt": "2021-01-16T05:50:11.679Z",
+        "firstPublishedAt": "2020-10-17T12:08:49.499Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0lZQKvBdhuAda6Z6Vk3P8k"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0lZQKvBdhuAda6Z6Vk3P8k"
+          }
+        },
+        "publishedCounter": 5,
+        "version": 10,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0lZQKvBdhuAda6Z6Vk3P8k"
+          }
+        }
+      },
+      "displayField": "id",
+      "name": "Menu",
+      "description": "",
+      "fields": [
+        {
+          "id": "id",
+          "name": "id",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "name",
+          "name": "name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "time",
+          "name": "time",
+          "type": "Integer",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "price",
+          "name": "price",
+          "type": "Integer",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "description",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "order",
+          "name": "order",
+          "type": "Integer",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ojan3cf1nbzx"
+          }
+        },
+        "id": "sideMenu",
+        "type": "ContentType",
+        "createdAt": "2020-10-17T12:24:18.334Z",
+        "updatedAt": "2021-01-16T05:50:12.689Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 9,
+        "publishedAt": "2021-01-16T05:50:12.689Z",
+        "firstPublishedAt": "2020-10-17T12:24:18.948Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0lZQKvBdhuAda6Z6Vk3P8k"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0lZQKvBdhuAda6Z6Vk3P8k"
+          }
+        },
+        "publishedCounter": 5,
+        "version": 10,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0lZQKvBdhuAda6Z6Vk3P8k"
+          }
+        }
+      },
+      "displayField": "id",
+      "name": "SideMenu",
+      "description": "",
+      "fields": [
+        {
+          "id": "id",
+          "name": "id",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "name",
+          "name": "name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "time",
+          "name": "time",
+          "type": "Integer",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "price",
+          "name": "price",
+          "type": "Integer",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "description",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "order",
+          "name": "order",
+          "type": "Integer",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ojan3cf1nbzx"
+          }
+        },
+        "id": "holiday",
+        "type": "ContentType",
+        "createdAt": "2020-11-28T05:27:22.719Z",
+        "updatedAt": "2021-01-16T05:50:12.165Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 15,
+        "publishedAt": "2021-01-16T05:50:12.165Z",
+        "firstPublishedAt": "2020-11-28T05:27:23.623Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0lZQKvBdhuAda6Z6Vk3P8k"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0lZQKvBdhuAda6Z6Vk3P8k"
+          }
+        },
+        "publishedCounter": 8,
+        "version": 16,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0lZQKvBdhuAda6Z6Vk3P8k"
+          }
+        }
+      },
+      "displayField": "date",
+      "name": "Holiday",
+      "description": "",
+      "fields": [
+        {
+          "id": "date",
+          "name": "date",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "year",
+          "name": "year",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    }
+  ],
+  "tags": [],
+  "editorInterfaces": [
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "ojan3cf1nbzx",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 10,
+        "createdAt": "2020-10-17T12:08:49.601Z",
+        "createdBy": {
+          "sys": {
+            "id": "0lZQKvBdhuAda6Z6Vk3P8k",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2021-01-16T05:50:13.855Z",
+        "updatedBy": {
+          "sys": {
+            "id": "0lZQKvBdhuAda6Z6Vk3P8k",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "menu",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "id",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "name",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "time",
+          "widgetId": "numberEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "price",
+          "widgetId": "numberEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "order",
+          "widgetId": "numberEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "ojan3cf1nbzx",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 10,
+        "createdAt": "2020-10-17T12:24:19.025Z",
+        "createdBy": {
+          "sys": {
+            "id": "0lZQKvBdhuAda6Z6Vk3P8k",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2021-01-16T05:50:13.502Z",
+        "updatedBy": {
+          "sys": {
+            "id": "0lZQKvBdhuAda6Z6Vk3P8k",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "sideMenu",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "id",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "name",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "time",
+          "widgetId": "numberEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "price",
+          "widgetId": "numberEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "order",
+          "widgetId": "numberEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "ojan3cf1nbzx",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 16,
+        "createdAt": "2020-11-28T05:27:23.720Z",
+        "createdBy": {
+          "sys": {
+            "id": "0lZQKvBdhuAda6Z6Vk3P8k",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2021-01-16T05:50:13.858Z",
+        "updatedBy": {
+          "sys": {
+            "id": "0lZQKvBdhuAda6Z6Vk3P8k",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "holiday",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "date",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "year",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ojan3cf1nbzx"
+          }
+        },
+        "id": "1kAitq3OIBlQGHGbOdkLTn",
+        "type": "Entry",
+        "createdAt": "2020-10-17T12:10:59.961Z",
+        "updatedAt": "2021-01-16T05:50:20.278Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 19,
+        "publishedAt": "2021-01-16T05:50:20.278Z",
+        "firstPublishedAt": "2020-10-17T12:11:38.592Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0lZQKvBdhuAda6Z6Vk3P8k"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0lZQKvBdhuAda6Z6Vk3P8k"
+          }
+        },
+        "publishedCounter": 8,
+        "version": 20,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0lZQKvBdhuAda6Z6Vk3P8k"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "menu"
+          }
+        }
+      },
+      "fields": {
+        "id": {
+          "ja-JP": "hand_120"
+        },
+        "name": {
+          "ja-JP": "ハンド（シンプルアート）"
+        },
+        "time": {
+          "ja-JP": 120
+        },
+        "price": {
+          "ja-JP": 4500
+        },
+        "description": {
+          "ja-JP": "オフィス向け、派手にできない方向けのデザインをご用意しております☆オフがある方は別途別途500円"
+        },
+        "order": {
+          "ja-JP": 2
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ojan3cf1nbzx"
+          }
+        },
+        "id": "7qoGuvwoLLPCYPjw8DgnhD",
+        "type": "Entry",
+        "createdAt": "2020-10-17T12:11:52.155Z",
+        "updatedAt": "2021-01-16T05:50:28.149Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 17,
+        "publishedAt": "2021-01-16T05:50:28.149Z",
+        "firstPublishedAt": "2020-10-17T12:12:25.846Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0lZQKvBdhuAda6Z6Vk3P8k"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0lZQKvBdhuAda6Z6Vk3P8k"
+          }
+        },
+        "publishedCounter": 7,
+        "version": 18,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0lZQKvBdhuAda6Z6Vk3P8k"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "menu"
+          }
+        }
+      },
+      "fields": {
+        "id": {
+          "ja-JP": "hand_90"
+        },
+        "name": {
+          "ja-JP": "ハンド（ワンカラー）"
+        },
+        "time": {
+          "ja-JP": 90
+        },
+        "price": {
+          "ja-JP": 3000
+        },
+        "description": {
+          "ja-JP": "お好きなカラーをお選びいただけます☆オフがある方は別途１本100円"
+        },
+        "order": {
+          "ja-JP": 3
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ojan3cf1nbzx"
+          }
+        },
+        "id": "29ONYoIH0tAzWRMyaZUBPs",
+        "type": "Entry",
+        "createdAt": "2020-10-17T12:12:32.829Z",
+        "updatedAt": "2021-01-16T05:50:27.354Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 17,
+        "publishedAt": "2021-01-16T05:50:27.354Z",
+        "firstPublishedAt": "2020-10-17T12:13:05.546Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0lZQKvBdhuAda6Z6Vk3P8k"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0lZQKvBdhuAda6Z6Vk3P8k"
+          }
+        },
+        "publishedCounter": 7,
+        "version": 18,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0lZQKvBdhuAda6Z6Vk3P8k"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "menu"
+          }
+        }
+      },
+      "fields": {
+        "id": {
+          "ja-JP": "hand_care"
+        },
+        "name": {
+          "ja-JP": "ハンドケア"
+        },
+        "time": {
+          "ja-JP": 60
+        },
+        "price": {
+          "ja-JP": 3000
+        },
+        "description": {
+          "ja-JP": "人気フットスパルーチェ角質除去☆オフがある方は別途１本100円"
+        },
+        "order": {
+          "ja-JP": 4
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ojan3cf1nbzx"
+          }
+        },
+        "id": "5j2JrscLhosIrKtCEzLGUV",
+        "type": "Entry",
+        "createdAt": "2020-10-17T12:19:01.408Z",
+        "updatedAt": "2021-01-16T05:50:26.912Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 17,
+        "publishedAt": "2021-01-16T05:50:26.912Z",
+        "firstPublishedAt": "2020-10-17T12:19:36.948Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0lZQKvBdhuAda6Z6Vk3P8k"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0lZQKvBdhuAda6Z6Vk3P8k"
+          }
+        },
+        "publishedCounter": 7,
+        "version": 18,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0lZQKvBdhuAda6Z6Vk3P8k"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "menu"
+          }
+        }
+      },
+      "fields": {
+        "id": {
+          "ja-JP": "foot_90"
+        },
+        "name": {
+          "ja-JP": "フット（ワンカラー）"
+        },
+        "time": {
+          "ja-JP": 90
+        },
+        "price": {
+          "ja-JP": 3000
+        },
+        "description": {
+          "ja-JP": "手書きのお花やミラーネイル、大理石、ニュアンス系など凝ったデザインが豊富な定額コース☆オフがある方は別途１本100円"
+        },
+        "order": {
+          "ja-JP": 7
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ojan3cf1nbzx"
+          }
+        },
+        "id": "PAQazDzyBg03SqNDdJPeW",
+        "type": "Entry",
+        "createdAt": "2020-10-17T12:19:44.427Z",
+        "updatedAt": "2021-01-16T05:50:26.525Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 17,
+        "publishedAt": "2021-01-16T05:50:26.525Z",
+        "firstPublishedAt": "2020-10-17T12:20:15.719Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0lZQKvBdhuAda6Z6Vk3P8k"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0lZQKvBdhuAda6Z6Vk3P8k"
+          }
+        },
+        "publishedCounter": 7,
+        "version": 18,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0lZQKvBdhuAda6Z6Vk3P8k"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "menu"
+          }
+        }
+      },
+      "fields": {
+        "id": {
+          "ja-JP": "foot_care"
+        },
+        "name": {
+          "ja-JP": "フットケア"
+        },
+        "time": {
+          "ja-JP": 60
+        },
+        "price": {
+          "ja-JP": 3000
+        },
+        "description": {
+          "ja-JP": "爪整え＋甘皮ケア＋角質除去＋トップコート＋仕上げクリーム◆話題のスパルーチェを使用したスペシャル角質除去つきメニューです☆オフがある方は別途１本100円"
+        },
+        "order": {
+          "ja-JP": 8
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ojan3cf1nbzx"
+          }
+        },
+        "id": "3iT2swHJNvQdzz4EEPgI25",
+        "type": "Entry",
+        "createdAt": "2020-10-17T12:20:24.263Z",
+        "updatedAt": "2021-01-16T05:50:26.056Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 17,
+        "publishedAt": "2021-01-16T05:50:26.056Z",
+        "firstPublishedAt": "2020-10-17T12:21:01.521Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0lZQKvBdhuAda6Z6Vk3P8k"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0lZQKvBdhuAda6Z6Vk3P8k"
+          }
+        },
+        "publishedCounter": 7,
+        "version": 18,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0lZQKvBdhuAda6Z6Vk3P8k"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "menu"
+          }
+        }
+      },
+      "fields": {
+        "id": {
+          "ja-JP": "off_hand"
+        },
+        "name": {
+          "ja-JP": "ハンドオフのみ"
+        },
+        "time": {
+          "ja-JP": 30
+        },
+        "price": {
+          "ja-JP": 1000
+        },
+        "description": {
+          "ja-JP": "ストーンがたくさん乗っている場合はお時間を超過する可能性がありますので、事前にお申し付け下さいませ。"
+        },
+        "order": {
+          "ja-JP": 9
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ojan3cf1nbzx"
+          }
+        },
+        "id": "7KjaSytDaDc9EcqtyrUkCC",
+        "type": "Entry",
+        "createdAt": "2020-10-17T12:21:07.073Z",
+        "updatedAt": "2021-01-16T05:50:25.659Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 17,
+        "publishedAt": "2021-01-16T05:50:25.659Z",
+        "firstPublishedAt": "2020-10-17T12:21:35.525Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0lZQKvBdhuAda6Z6Vk3P8k"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0lZQKvBdhuAda6Z6Vk3P8k"
+          }
+        },
+        "publishedCounter": 7,
+        "version": 18,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0lZQKvBdhuAda6Z6Vk3P8k"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "menu"
+          }
+        }
+      },
+      "fields": {
+        "id": {
+          "ja-JP": "off_foot"
+        },
+        "name": {
+          "ja-JP": "フットオフのみ"
+        },
+        "time": {
+          "ja-JP": 30
+        },
+        "price": {
+          "ja-JP": 1000
+        },
+        "description": {
+          "ja-JP": "ストーンがたくさん乗っている場合はお時間を超過する可能性がありますので、事前にお申し付け下さいませ。"
+        },
+        "order": {
+          "ja-JP": 10
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ojan3cf1nbzx"
+          }
+        },
+        "id": "2GBMqQyp3u8rnkOx7DFzD2",
+        "type": "Entry",
+        "createdAt": "2020-10-17T12:21:41.030Z",
+        "updatedAt": "2021-01-16T05:50:25.229Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 17,
+        "publishedAt": "2021-01-16T05:50:25.229Z",
+        "firstPublishedAt": "2020-10-17T12:22:13.750Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0lZQKvBdhuAda6Z6Vk3P8k"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0lZQKvBdhuAda6Z6Vk3P8k"
+          }
+        },
+        "publishedCounter": 7,
+        "version": 18,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0lZQKvBdhuAda6Z6Vk3P8k"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "menu"
+          }
+        }
+      },
+      "fields": {
+        "id": {
+          "ja-JP": "off_all"
+        },
+        "name": {
+          "ja-JP": "オフ両方のみ（ハンド・フット）"
+        },
+        "time": {
+          "ja-JP": 60
+        },
+        "price": {
+          "ja-JP": 2000
+        },
+        "description": {
+          "ja-JP": "ストーンがたくさん乗っている場合はお時間を超過する可能性がありますので、事前にお申し付け下さいませ。"
+        },
+        "order": {
+          "ja-JP": 11
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ojan3cf1nbzx"
+          }
+        },
+        "id": "52teqwgxR0znUKABPB5qVL",
+        "type": "Entry",
+        "createdAt": "2020-10-17T12:24:35.839Z",
+        "updatedAt": "2021-01-16T05:50:24.827Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 15,
+        "publishedAt": "2021-01-16T05:50:24.827Z",
+        "firstPublishedAt": "2020-10-17T12:25:05.734Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0lZQKvBdhuAda6Z6Vk3P8k"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0lZQKvBdhuAda6Z6Vk3P8k"
+          }
+        },
+        "publishedCounter": 6,
+        "version": 16,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0lZQKvBdhuAda6Z6Vk3P8k"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "sideMenu"
+          }
+        }
+      },
+      "fields": {
+        "id": {
+          "ja-JP": "off_hand"
+        },
+        "name": {
+          "ja-JP": "ハンドオフあり"
+        },
+        "time": {
+          "ja-JP": 30
+        },
+        "price": {
+          "ja-JP": 500
+        },
+        "description": {
+          "ja-JP": "ストーンがたくさん乗っている場合はお時間を超過する可能性がありますので、事前にお申し付け下さいませ。"
+        },
+        "order": {
+          "ja-JP": 1
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ojan3cf1nbzx"
+          }
+        },
+        "id": "Qke03jhiJ7C1iPq1VHLwu",
+        "type": "Entry",
+        "createdAt": "2020-10-17T12:25:12.853Z",
+        "updatedAt": "2021-01-16T05:50:23.742Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 14,
+        "publishedAt": "2021-01-16T05:50:23.742Z",
+        "firstPublishedAt": "2020-10-17T12:25:45.611Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0lZQKvBdhuAda6Z6Vk3P8k"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0lZQKvBdhuAda6Z6Vk3P8k"
+          }
+        },
+        "publishedCounter": 6,
+        "version": 15,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0lZQKvBdhuAda6Z6Vk3P8k"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "sideMenu"
+          }
+        }
+      },
+      "fields": {
+        "id": {
+          "ja-JP": "off_foot"
+        },
+        "name": {
+          "ja-JP": "フットオフあり"
+        },
+        "time": {
+          "ja-JP": 30
+        },
+        "price": {
+          "ja-JP": 500
+        },
+        "description": {
+          "ja-JP": "ストーンがたくさん乗っている場合はお時間を超過する可能性がありますので、事前にお申し付け下さいませ。"
+        },
+        "order": {
+          "ja-JP": 2
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ojan3cf1nbzx"
+          }
+        },
+        "id": "526YCjkI8A1K1EDsOWE5mn",
+        "type": "Entry",
+        "createdAt": "2020-10-17T12:25:52.532Z",
+        "updatedAt": "2021-01-16T05:50:23.317Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 16,
+        "publishedAt": "2021-01-16T05:50:23.317Z",
+        "firstPublishedAt": "2020-10-17T12:26:21.078Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0lZQKvBdhuAda6Z6Vk3P8k"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0lZQKvBdhuAda6Z6Vk3P8k"
+          }
+        },
+        "publishedCounter": 7,
+        "version": 17,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0lZQKvBdhuAda6Z6Vk3P8k"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "sideMenu"
+          }
+        }
+      },
+      "fields": {
+        "id": {
+          "ja-JP": "off_all"
+        },
+        "name": {
+          "ja-JP": "オフ両方（ハンド・フット）"
+        },
+        "time": {
+          "ja-JP": 60
+        },
+        "price": {
+          "ja-JP": 1000
+        },
+        "description": {
+          "ja-JP": "ストーンがたくさん乗っている場合はお時間を超過する可能性がありますので、事前にお申し付け下さいませ。"
+        },
+        "order": {
+          "ja-JP": 3
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ojan3cf1nbzx"
+          }
+        },
+        "id": "2vBZKBaDbVfBH9cdxZXE5d",
+        "type": "Entry",
+        "createdAt": "2020-10-24T02:17:21.178Z",
+        "updatedAt": "2021-01-16T05:50:22.919Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 13,
+        "publishedAt": "2021-01-16T05:50:22.919Z",
+        "firstPublishedAt": "2020-10-24T02:17:45.706Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0lZQKvBdhuAda6Z6Vk3P8k"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0lZQKvBdhuAda6Z6Vk3P8k"
+          }
+        },
+        "publishedCounter": 5,
+        "version": 14,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0lZQKvBdhuAda6Z6Vk3P8k"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "sideMenu"
+          }
+        }
+      },
+      "fields": {
+        "id": {
+          "ja-JP": "off_skip"
+        },
+        "name": {
+          "ja-JP": "オフなし"
+        },
+        "time": {
+          "ja-JP": 0
+        },
+        "price": {
+          "ja-JP": 0
+        },
+        "order": {
+          "ja-JP": 0
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ojan3cf1nbzx"
+          }
+        },
+        "id": "1DtniHOyTp8vTa5hzeapQS",
+        "type": "Entry",
+        "createdAt": "2020-11-28T05:29:57.221Z",
+        "updatedAt": "2021-01-16T05:50:22.093Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 11,
+        "publishedAt": "2021-01-16T05:50:22.093Z",
+        "firstPublishedAt": "2020-11-28T05:30:06.039Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0lZQKvBdhuAda6Z6Vk3P8k"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0lZQKvBdhuAda6Z6Vk3P8k"
+          }
+        },
+        "publishedCounter": 5,
+        "version": 12,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0lZQKvBdhuAda6Z6Vk3P8k"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "holiday"
+          }
+        }
+      },
+      "fields": {
+        "date": {
+          "ja-JP": "20210101"
+        },
+        "year": {
+          "ja-JP": "2021"
+        }
+      }
+    }
+  ],
+  "assets": [],
+  "locales": [
+    {
+      "name": "Japanese (Japan)",
+      "code": "ja-JP",
+      "fallbackCode": null,
+      "default": true,
+      "contentManagementApi": true,
+      "contentDeliveryApi": true,
+      "optional": false,
+      "sys": {
+        "type": "Locale",
+        "id": "0H8xoS70gfJlsq2ghaqi6e",
+        "version": 2,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ojan3cf1nbzx"
+          }
+        },
+        "environment": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Environment",
+            "id": "master",
+            "uuid": "34c334c1-bd62-4041-b9ee-e7e32d74fa37"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0lZQKvBdhuAda6Z6Vk3P8k"
+          }
+        },
+        "createdAt": "2020-10-17T12:06:19Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0lZQKvBdhuAda6Z6Vk3P8k"
+          }
+        },
+        "updatedAt": "2021-01-16T03:26:12Z"
+      }
+    }
+  ],
+  "webhooks": [],
+  "roles": []
+}

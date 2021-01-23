@@ -1,0 +1,5 @@
+{
+  "spaceId": "source space id",
+  "managementToken": "destination space management token",
+  "contentFile": "contentful-export.json"
+}

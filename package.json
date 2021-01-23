@@ -1,0 +1,58 @@
+{
+  "name": "salon-reservation",
+  "private": true,
+  "description": "A Salon reservation Site for Gatsby",
+  "version": "0.1.0",
+  "license": "0BSD",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "setup": "node ./bin/setup.js",
+    "cy:open": "cypress open",
+    "test:e2e:CI": "cypress run --reporter mochawesome --reporter-options 'reportDir=test/cypress/report/mochawesome-report,overwrite=false,html=false,json=true,timestamp=mmddyyyy_HHMMss'",
+    "test:e2e:report:merge": "mochawesome-merge 'test/cypress/report/mochawesome-report/*.json' > test/cypress/report/mochawesome.json"
+  },
+  "dependencies": {
+    "@date-io/date-fns": "1.x",
+    "@material-ui/core": "latest",
+    "@material-ui/icons": "latest",
+    "@material-ui/lab": "latest",
+    "@material-ui/pickers": "latest",
+    "@sentry/react": "latest",
+    "@sentry/serverless": "latest",
+    "@sentry/tracing": "latest",
+    "aws-amplify": "latest",
+    "date-fns": "latest",
+    "gatsby": "latest",
+    "gatsby-image": "latest",
+    "gatsby-plugin-material-ui": "latest",
+    "gatsby-plugin-sharp": "latest",
+    "gatsby-source-contentful": "latest",
+    "gatsby-source-filesystem": "latest",
+    "gatsby-transformer-sharp": "latest",
+    "moment": "latest",
+    "notistack": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-feather": "latest",
+    "react-helmet": "latest",
+    "react-hook-form": "latest",
+    "react-responsive": "latest",
+    "uuid": "latest"
+  },
+  "devDependencies": {
+    "prettier": "latest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Thirosue/booking"
+  },
+  "bugs": {
+    "url": "https://github.com/Thirosue/booking/issues"
+  }
+}
