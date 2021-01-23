@@ -186,6 +186,12 @@ $ amplify push
 $ amplify delete
 ```
 
+## Deploy to Netlify
+
+<a href="https://app.netlify.com/start/deploy?repository=https://github.com/Thirosue/booking">
+  <img src="https://www.netlify.com/img/deploy/button.svg" title="Deploy to Netlify">
+</a>
+
 ## References
 
 * Gatsby
