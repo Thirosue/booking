@@ -1,5 +1,7 @@
 # Contentful Gatsby Booking App
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a6b5334c-83ba-46de-b72e-b19527239110/deploy-status)](https://app.netlify.com/sites/festive-swartz-405bdc/deploys)
+
 Create a [Gatsby](http://gatsbyjs.com/) booking app powered by [AWS Amplify](https://aws.amazon.com/amplify/). 
 
 ![The index page of the booking app](https://thirosue.github.io/hosting-image/booking/screenshot.png "The index page of the booking app")
@@ -7,6 +9,16 @@ Create a [Gatsby](http://gatsbyjs.com/) booking app powered by [AWS Amplify](htt
 Static sites are scalable, secure and have very little required maintenance. They come with a drawback though. Not everybody feels good editing files, building a project and uploading it somewhere. This is where Contentful comes into play.
 
 With Contentful and Gatsby you can connect your favorite static site generator with an API that provides an easy to use interface for people writing content and automate the publishing using services like [Travis CI](https://travis-ci.org/) or [Netlify](https://www.netlify.com/) or [AWS Amplify](https://aws.amazon.com/amplify/) .
+
+## Demo Page
+
+* [https://festive-swartz-405bdc.netlify.app](https://festive-swartz-405bdc.netlify.app)
+
+* demo user
+
+| name | password   | 
+| :----| :----------|
+| demo | Password1? |
 
 ## Features
 

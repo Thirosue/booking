@@ -167,7 +167,7 @@ async function book(data, confirm, handleClose) {
 
 const submitMapping = {
     1: getUser,
-    2: syncUser,
+    99: syncUser,
     3: book,
 }
 
