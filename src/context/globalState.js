@@ -82,7 +82,6 @@ const GlobalStateProvider = ({ children }) => {
             {/*  processing start */}
             <Progress processing={state.processing} />
             {/*  processing end */}
-            {/*  notice start */}
             {children}
         </GlobalContext.Provider>
     );
