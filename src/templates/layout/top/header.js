@@ -11,14 +11,18 @@ import {
     Clock as ClockIcon,
     Info as InfoIcon,
     LogIn as LogInIcon,
-    User as UserIcon,
+    // User as UserIcon,
+    LogOut as LogOutIcon,
 } from 'react-feather';
+import AuthService from "../../../services/auth";
+import useConfirm from '../../../hooks/useConfirm'
 
 const SignInOutLink = (props) => {
     const isLoggedIn = props.isLoggedIn;
-    const title = isLoggedIn ? 'Mypage' : 'SignIn';
+    const title = isLoggedIn ? 'SignOut' : 'SignIn';
     const handleClick = isLoggedIn ? props.mypage : props.signin
-    const icon = isLoggedIn ? (<UserIcon />) : (<LogInIcon />);
+    // const icon = isLoggedIn ? (<UserIcon />) : (<LogInIcon />);
+    const icon = isLoggedIn ? (<LogOutIcon />) : (<LogInIcon />);
 
     return (
         <Tooltip title={title}>
@@ -30,7 +34,7 @@ const SignInOutLink = (props) => {
 }
 
 export default () => {
-    const goMypage = () => navigate('/mypage')
+    // const goMypage = () => navigate('/mypage') disable
 
     // For booking
     const [openBooking, setOpenBooking] = React.useState(false)
@@ -52,6 +56,20 @@ export default () => {
 
     const handleClose = () => {
         setOpen(false);
+    };
+
+    // For Logout
+    const confirm = useConfirm();
+    const context = React.useContext(GlobalContext);
+    const signOut = async () => {
+        await AuthService.signOut()
+        context.updateState({
+            signedIn: false,
+            session: {
+                username: null
+            }
+        })
+        confirm({ alert: true, description: 'ログアウトしました' })
     };
 
     return (
@@ -103,7 +121,7 @@ export default () => {
                                         </Tooltip>
                                     </li>
                                     <li>
-                                        <SignInOutLink icon={true} isLoggedIn={context.state.signedIn} signin={handleClickOpen} mypage={goMypage} />
+                                        <SignInOutLink icon={true} isLoggedIn={context.state.signedIn} signin={handleClickOpen} mypage={signOut} />
                                     </li>
                                 </ul>
                             </MediaQuery>
@@ -132,7 +150,7 @@ export default () => {
                                         </Tooltip>
                                     </li>
                                     <li>
-                                        <SignInOutLink icon={false} isLoggedIn={context.state.signedIn} signin={handleClickOpen} mypage={goMypage} />
+                                        <SignInOutLink icon={false} isLoggedIn={context.state.signedIn} signin={handleClickOpen} mypage={signOut} />
                                     </li>
                                 </ul>
                             </MediaQuery>
