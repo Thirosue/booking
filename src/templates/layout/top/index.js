@@ -19,15 +19,27 @@ import "./layout.css"
 
 export default ({ location, children }) => {
     const title = useDocumentTitle(location);
+    const description = 'ネイルなDemo Salonで。オンライン予約もこちらから。'
+    const url = 'https://festive-swartz-405bdc.netlify.app/'
+    const imageUrl = 'https://thirosue.github.io/hosting-image/booking/screenshot.png'
 
     return (
         <ErrorBoundary>
             <Helmet>
+                <html lang="ja" />
+                <title>{title}</title>
                 <meta
                     name="viewport"
                     content="minimum-scale=1, initial-scale=1, width=device-width"
                 />
-                <title>{title}</title>
+                <meta name="Description" content={description} />
+                <meta property="og:site_name" content={process.env.GATSBY_SALON_NAME} />
+                <meta property="og:title" content={title} />
+                <meta property="og:description" content={description} />
+                <meta property="og:url" content={url} />
+                <meta property="og:type" content="website" />
+                <meta property="og:locale" content="ja_JP" />
+                <meta property="og:image" content={imageUrl} />
             </Helmet>
             <SnackbarProvider maxSnack={3}>
                 <ConfirmProvider>
