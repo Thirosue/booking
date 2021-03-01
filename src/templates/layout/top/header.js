@@ -1,11 +1,8 @@
-import React from 'react'
-import { navigate } from "gatsby"
+import React, { lazy, Suspense } from 'react'
 import MediaQuery from 'react-responsive'
 import Link from '@material-ui/core/Link'
 import Tooltip from '@material-ui/core/Tooltip';
 import GlobalContext from '../../../context/global-context'
-import BookingForm from '../../../components/pages/booking';
-import SignInForm from '../../../components/pages/auth/signin';
 import {
     Home as HomeIcon,
     Clock as ClockIcon,
@@ -15,7 +12,10 @@ import {
     LogOut as LogOutIcon,
 } from 'react-feather';
 import AuthService from "../../../services/auth";
-import useConfirm from '../../../hooks/useConfirm'
+import useConfirm from '../../../hooks/useConfirm';
+
+const BookingForm = lazy(() => import('../../../components/pages/booking'));
+const SignInForm = lazy(() => import('../../../components/pages/auth/signin'));
 
 const SignInOutLink = (props) => {
     const isLoggedIn = props.isLoggedIn;
@@ -76,8 +76,10 @@ export default () => {
         <GlobalContext.Consumer>
             {context => (
                 <header className="header">
-                    <BookingForm open={openBooking} handleClose={handleCloseBooking} />
-                    <SignInForm open={open} handleClose={handleClose} />
+                    <Suspense fallback={<div>Loading...</div>}>
+                        <BookingForm open={openBooking} handleClose={handleCloseBooking} />
+                        <SignInForm open={open} handleClose={handleClose} />
+                    </Suspense>
                     <div className="container">
                         <div className="site">
                             <Link href="/">
