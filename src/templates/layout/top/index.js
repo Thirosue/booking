@@ -8,7 +8,6 @@ import { MuiPickersUtilsProvider } from '@material-ui/pickers';
 import theme from "../../../theme"
 import Header from './header'
 import Footer from './footer'
-import DeviceProvider from '../../../context/deviceContext'
 import ConfirmProvider from '../../../context/confirmProvider'
 import InquiryProvider from '../../../context/inquiryProvider'
 import { GlobalStateProvider } from '../../../context/globalState'
@@ -42,23 +41,22 @@ export default ({ location, children }) => {
                 <meta property="og:image" content={imageUrl} />
             </Helmet>
             <SnackbarProvider maxSnack={3}>
-                <ConfirmProvider>
-                    <ThemeProvider theme={theme}>
-                        <DeviceProvider>
-                            <GlobalStateProvider>
-                                <InquiryProvider>
-                                    <MuiPickersUtilsProvider utils={DateFnsUtils}>
-                                        <Header />
-                                        {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
-                                        <CssBaseline />
-                                        {children}
-                                        <Footer />
-                                    </MuiPickersUtilsProvider>
-                                </InquiryProvider>
-                            </GlobalStateProvider>
-                        </DeviceProvider>
-                    </ThemeProvider>
-                </ConfirmProvider>
+                <GlobalStateProvider>
+                    <ConfirmProvider>
+                        <ThemeProvider theme={theme}>
+                            <InquiryProvider>
+                                <MuiPickersUtilsProvider utils={DateFnsUtils}>
+                                    <Header />
+                                    {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
+                                    <CssBaseline />
+                                    {children}
+                                    <Footer />
+                                </MuiPickersUtilsProvider>
+                            </InquiryProvider>
+                        </ThemeProvider>
+                    </ConfirmProvider>
+                </GlobalStateProvider>
             </SnackbarProvider>
-        </ErrorBoundary>)
+        </ErrorBoundary>
+    )
 }

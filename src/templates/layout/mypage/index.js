@@ -8,9 +8,7 @@ import DialogContent from '@material-ui/core/DialogContent';
 import DateFnsUtils from '@date-io/date-fns';
 import { MuiPickersUtilsProvider } from '@material-ui/pickers';
 import theme from "../../../theme"
-import DeviceProvider from '../../../context/deviceContext'
 import ConfirmProvider from '../../../context/confirmProvider'
-import InquiryProvider from '../../../context/inquiryProvider'
 import { GlobalStateProvider } from '../../../context/globalState'
 import ErrorBoundary from '../../../errorboundary'
 import useDocumentTitle from '../../../hooks/useDocumentTitle'
@@ -61,37 +59,34 @@ export default ({ location, children }) => {
                 <title>{title}</title>
             </Helmet>
             <SnackbarProvider maxSnack={3}>
-                <ConfirmProvider>
-                    <ThemeProvider theme={theme}>
-                        <DeviceProvider>
-                            <GlobalStateProvider>
-                                <InquiryProvider>
-                                    <MuiPickersUtilsProvider utils={DateFnsUtils}>
-                                        <div className={classes.root}>
-                                            <Header onMobileNavOpen={() => setMobileNavOpen(true)} />
-                                            <NavBar
-                                                location={location}
-                                                onMobileClose={() => setMobileNavOpen(false)}
-                                                openMobile={isMobileNavOpen}
-                                            />
-                                            {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
-                                            <CssBaseline />
-                                            <div className={classes.wrapper}>
-                                                <div className={classes.contentContainer}>
-                                                    <div className={classes.content}>
-                                                        <DialogContent>
-                                                            {children}
-                                                        </DialogContent>
-                                                    </div>
-                                                </div>
+                <GlobalStateProvider>
+                    <ConfirmProvider>
+                        <ThemeProvider theme={theme}>
+                            <MuiPickersUtilsProvider utils={DateFnsUtils}>
+                                <div className={classes.root}>
+                                    <Header onMobileNavOpen={() => setMobileNavOpen(true)} />
+                                    <NavBar
+                                        location={location}
+                                        onMobileClose={() => setMobileNavOpen(false)}
+                                        openMobile={isMobileNavOpen}
+                                    />
+                                    {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
+                                    <CssBaseline />
+                                    <div className={classes.wrapper}>
+                                        <div className={classes.contentContainer}>
+                                            <div className={classes.content}>
+                                                <DialogContent>
+                                                    {children}
+                                                </DialogContent>
                                             </div>
                                         </div>
-                                    </MuiPickersUtilsProvider>
-                                </InquiryProvider>
-                            </GlobalStateProvider>
-                        </DeviceProvider>
-                    </ThemeProvider>
-                </ConfirmProvider>
+                                    </div>
+                                </div>
+                            </MuiPickersUtilsProvider>
+                        </ThemeProvider>
+                    </ConfirmProvider>
+                </GlobalStateProvider>
             </SnackbarProvider>
-        </ErrorBoundary>)
+        </ErrorBoundary>
+    )
 }

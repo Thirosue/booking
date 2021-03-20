@@ -1,8 +1,6 @@
 import React from "react"
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 
-import DeviceContext from './device-context';
-
 const getDevice = (overSE, overX, overSmartPhone, overiPad) => {
     if (overiPad) return 'iPadPro'
     else if (overSmartPhone) return 'iPad'
@@ -11,7 +9,7 @@ const getDevice = (overSE, overX, overSmartPhone, overiPad) => {
     return 'iPhoneSE'
 }
 
-export default ({ children }) => {
+export default () => {
     const [device, setDevice] = React.useState('iPhoneX');
 
     const overSE = useMediaQuery('(min-width:374px)'); // over iPhoneSE
@@ -24,11 +22,5 @@ export default ({ children }) => {
         setDevice(device)
     }, [overSE, overX, overSmartPhone, overiPad, device]);
 
-    return (
-        <DeviceContext.Provider
-            value={device}
-        >
-            {children}
-        </DeviceContext.Provider>
-    );
+    return device;
 }

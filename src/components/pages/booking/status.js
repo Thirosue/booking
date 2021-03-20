@@ -13,8 +13,8 @@ import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
-import DeviceContext from '../../../context/device-context'
 import useConfirm from '../../../hooks/useConfirm'
+import useDevice from '../../../hooks/useDevice'
 import userResavationTable from '../../../hooks/useResavationTable'
 import Const from '../../../const'
 
@@ -74,7 +74,7 @@ const start = new Date()
 
 export default ({ handleNext, form }) => {
     const confirm = useConfirm();
-    const device = React.useContext(DeviceContext);
+    const device = useDevice();
     const reservationTable = userResavationTable({ start, frame: (form.menu.time + form.off.time) / 30 })
     const classes = useStyles();
 
