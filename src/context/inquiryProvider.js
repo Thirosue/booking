@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, lazy, Suspense } from 'react';
 import InquiryContext from './inquiryContext';
-import InquiryForm from '../templates/dialog/inquiry';
+
+const InquiryForm = lazy(() => import('../templates/dialog/inquiry'));
 
 const InquiryProvider = ({ children }) => {
     const [open, setOpen] = useState(false);
@@ -23,10 +24,12 @@ const InquiryProvider = ({ children }) => {
             <InquiryContext.Provider value={global}>
                 {children}
             </InquiryContext.Provider>
-            <InquiryForm
-                open={open}
-                handleClose={handleClose}
-            />
+            <Suspense fallback={<></>}>
+                <InquiryForm
+                    open={open}
+                    handleClose={handleClose}
+                />
+            </Suspense>
         </>
     );
 };

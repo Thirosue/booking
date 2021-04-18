@@ -76,7 +76,7 @@ const Header = () => {
         <GlobalContext.Consumer>
             {context => (
                 <header className="header">
-                    <Suspense fallback={<div>Loading...</div>}>
+                    <Suspense fallback={<></>}>
                         <BookingForm open={openBooking} handleClose={handleCloseBooking} />
                         <SignInForm open={open} handleClose={handleClose} />
                     </Suspense>

@@ -1,8 +1,9 @@
-import React from "react"
+import React, { lazy, Suspense } from 'react'
 import _ from 'lodash'
 import GlobalContext from './global-context';
 import AuthService from "../services/auth";
-import Progress from "../components/Progress";
+
+const Progress = lazy(() => import('../components/Progress'));
 
 // Global State Settings
 const initialState = {
@@ -80,7 +81,9 @@ const GlobalStateProvider = ({ children }) => {
             value={global}
         >
             {/*  processing start */}
-            <Progress processing={state.processing} />
+            <Suspense fallback={<></>}>
+                <Progress processing={state.processing} />
+            </Suspense>
             {/*  processing end */}
             {children}
         </GlobalContext.Provider>

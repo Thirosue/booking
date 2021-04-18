@@ -1,6 +1,7 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, lazy, Suspense } from 'react';
 import ConfirmContext from './confirmContext';
-import ConfirmationDialog from '../templates/dialog/confirm';
+
+const ConfirmationDialog = lazy(() => import('../templates/dialog/confirm'));
 
 const DEFAULT_OPTIONS = {
     html: false,
@@ -69,13 +70,15 @@ const ConfirmProvider = ({ children, defaultOptions = {} }) => {
             <ConfirmContext.Provider value={confirm}>
                 {children}
             </ConfirmContext.Provider>
-            <ConfirmationDialog
-                open={resolveReject.length === 2}
-                options={options}
-                onClose={handleClose}
-                onCancel={handleCancel}
-                onConfirm={handleConfirm}
-            />
+            <Suspense fallback={<></>}>
+                <ConfirmationDialog
+                    open={resolveReject.length === 2}
+                    options={options}
+                    onClose={handleClose}
+                    onCancel={handleCancel}
+                    onConfirm={handleConfirm}
+                />
+            </Suspense>
         </>
     );
 };
