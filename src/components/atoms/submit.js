@@ -2,7 +2,7 @@ import React from 'react';
 import Button from '@material-ui/core/Button';
 import GlobalContext from '../../context/global-context'
 
-export default ({ children, fullWidth = false, color = 'primary', className = '', onClick }) => {
+const SubmitButton = ({ children, fullWidth = false, color = 'primary', className = '', onClick }) => {
     const context = React.useContext(GlobalContext);
 
     const handleSubmit = () => {
@@ -24,3 +24,5 @@ export default ({ children, fullWidth = false, color = 'primary', className = ''
         </Button>
     )
 }
+
+export default SubmitButton

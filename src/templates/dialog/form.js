@@ -9,7 +9,7 @@ import Grid from '@material-ui/core/Grid';
 import Header from './header'
 import Submit from "../../components/atoms/submit";
 
-export default ({ open, title, fields, submitContext = {}, handleClose }) => {
+const FormDialog = ({ open, title, fields, submitContext = {}, handleClose }) => {
     const theme = useTheme();
     const fullScreen = useMediaQuery(theme.breakpoints.down('sm'));
 
@@ -51,3 +51,5 @@ export default ({ open, title, fields, submitContext = {}, handleClose }) => {
         </>
     );
 }
+
+export default FormDialog

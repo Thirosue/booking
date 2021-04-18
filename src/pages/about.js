@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }))
 
-export default ({ data }) => {
+const About = ({ data }) => {
   const classes = useStyles()
   const inquiry = useInquiry()
 
@@ -80,3 +80,5 @@ export const query = graphql`
     }
   }
 `
+
+export default About

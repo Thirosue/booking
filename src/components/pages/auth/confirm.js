@@ -9,7 +9,7 @@ import FormDialog from "../../../templates/dialog/form";
 import { useForm } from "react-hook-form";
 import useConfirm from '../../../hooks/useConfirm'
 
-export default ({ username, open, handleClose }) => {
+const ConfirmForm = ({ username, open, handleClose }) => {
     const confirm = useConfirm();
 
     const { enqueueSnackbar } = useSnackbar();
@@ -85,3 +85,5 @@ export default ({ username, open, handleClose }) => {
         />
     );
 }
+
+export default ConfirmForm

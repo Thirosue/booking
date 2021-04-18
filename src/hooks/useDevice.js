@@ -9,7 +9,7 @@ const getDevice = (overSE, overX, overSmartPhone, overiPad) => {
     return 'iPhoneSE'
 }
 
-export default () => {
+const useDevice = () => {
     const [device, setDevice] = React.useState('iPhoneX');
 
     const overSE = useMediaQuery('(min-width:374px)'); // over iPhoneSE
@@ -24,3 +24,5 @@ export default () => {
 
     return device;
 }
+
+export default useDevice

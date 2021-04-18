@@ -6,7 +6,7 @@ import InputBase from '@material-ui/core/InputBase';
 import InputLabel from '@material-ui/core/InputLabel';
 import Box from '@material-ui/core/Box';
 
-export default ({ form }) => {
+const ReviewForm = ({ form }) => {
 
     React.useEffect(() => {
         console.log(form)
@@ -80,3 +80,5 @@ export default ({ form }) => {
         </>
     );
 }
+
+export default ReviewForm

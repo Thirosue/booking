@@ -16,7 +16,7 @@ import useDocumentTitle from '../../../hooks/useDocumentTitle'
 
 import "./layout.css"
 
-export default ({ location, children }) => {
+const Index = ({ location, children }) => {
     const title = useDocumentTitle(location);
     const description = 'ネイルなDemo Salonで。オンライン予約もこちらから。'
     const url = 'https://festive-swartz-405bdc.netlify.app/'
@@ -60,3 +60,5 @@ export default ({ location, children }) => {
         </ErrorBoundary>
     )
 }
+
+export default Index

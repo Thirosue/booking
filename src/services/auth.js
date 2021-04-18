@@ -116,7 +116,7 @@ async function updateAttributes(user, attributes) {
     return response
 }
 
-export default {
+const AuthService = {
     signIn,
     signUp,
     confirmSignUp,
@@ -127,3 +127,5 @@ export default {
     getUser,
     updateAttributes,
 }
+
+export default AuthService

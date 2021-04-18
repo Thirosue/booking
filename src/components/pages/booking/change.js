@@ -77,7 +77,7 @@ function getStepContent(step, register, setValue, form) {
     }
 }
 
-export default ({ booking, open, handleClose }) => {
+const BookingChangeForm = ({ booking, open, handleClose }) => {
     const contentful = useStaticQuery(query)
 
     React.useEffect(() => {
@@ -189,23 +189,23 @@ export default ({ booking, open, handleClose }) => {
                         </Typography>
                     </>
                 ) : (
-                        <>
-                            {getStepContent(activeStep, register, setValue, form)}
-                            <div className={classes.buttons}>
-                                {activeStep !== 0 && (
-                                    <Button onClick={handleBack} className={classes.button}>
-                                        Back
-                                    </Button>
-                                )}
-                                <Submit
-                                    onClick={handleSubmit(handleNext)}
-                                    className={classes.button}
-                                >
-                                    {activeStep === steps.length - 1 ? 'Confirm' : 'Next'}
-                                </Submit>
-                            </div>
-                        </>
-                    )}
+                    <>
+                        {getStepContent(activeStep, register, setValue, form)}
+                        <div className={classes.buttons}>
+                            {activeStep !== 0 && (
+                                <Button onClick={handleBack} className={classes.button}>
+                                    Back
+                                </Button>
+                            )}
+                            <Submit
+                                onClick={handleSubmit(handleNext)}
+                                className={classes.button}
+                            >
+                                {activeStep === steps.length - 1 ? 'Confirm' : 'Next'}
+                            </Submit>
+                        </div>
+                    </>
+                )}
             </>
         </>),
         action: (<>
@@ -231,3 +231,5 @@ export default ({ booking, open, handleClose }) => {
         />
     );
 }
+
+export default BookingChangeForm

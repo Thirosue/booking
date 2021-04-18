@@ -11,4 +11,6 @@ const getAll = async () => {
     return status
 };
 
-export default { getAll };
+const ReservationTableService = { getAll }
+
+export default ReservationTableService

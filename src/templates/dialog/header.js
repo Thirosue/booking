@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-export default ({ title, handleClose }) => {
+const Header = ({ title, handleClose }) => {
     const classes = useStyles();
 
     return (
@@ -32,3 +32,5 @@ export default ({ title, handleClose }) => {
         </AppBar>
     )
 }
+
+export default Header

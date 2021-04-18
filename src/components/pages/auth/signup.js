@@ -8,7 +8,7 @@ import FormDialog from "../../../templates/dialog/form";
 import { useForm } from "react-hook-form";
 import useConfirm from '../../../hooks/useConfirm'
 
-export default ({ open, handleClose }) => {
+const SignUpForm = ({ open, handleClose }) => {
     const confirm = useConfirm();
     const [userName, setUserName] = React.useState('');
 
@@ -116,3 +116,5 @@ export default ({ open, handleClose }) => {
         </>
     );
 }
+
+export default SignUpForm

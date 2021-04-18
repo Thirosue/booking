@@ -8,7 +8,7 @@ const titleMapping = [
     { pathname: "/", title: 'Top' },
 ]
 
-export default (location) => {
+const useDocumentTitle = (location) => {
     const [title, setTitle] = useState('Top');
 
     useEffect(() => {
@@ -19,3 +19,5 @@ export default (location) => {
 
     return title
 }
+
+export default useDocumentTitle

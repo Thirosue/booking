@@ -5,7 +5,7 @@ import Const from '../const'
 import ReservationTableService from '../services/reservationTable';
 
 // ReservationTable の state と更新ロジックを持つフック
-export default ({ start = new Date(), frame }) => {
+const useResavationTable = ({ start = new Date(), frame }) => {
     const [reservationTable, setReservationTable] = useState([]);
 
     // このカスタムフックを利用しているコンポーネントがマウントされたら ReservationTable を取得する。
@@ -65,3 +65,5 @@ export default ({ start = new Date(), frame }) => {
 
     return reservationTable;
 };
+
+export default useResavationTable

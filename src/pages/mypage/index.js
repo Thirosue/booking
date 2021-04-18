@@ -21,7 +21,7 @@ const useStyles = makeStyles({
     },
 });
 
-export default () => {
+const Index = () => {
     const classes = useStyles();
     const context = React.useContext(GlobalContext);
     const confirm = useConfirm();
@@ -89,3 +89,5 @@ export default () => {
             {bookings !== null && bookings.length === 0 && (<>予約なし</>)}
         </>)
 }
+
+export default Index

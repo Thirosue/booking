@@ -82,7 +82,7 @@ async function cancel(sub, time) {
 async function remove(sub, time) {
 }
 
-export default {
+const BookingService = {
     list,
     get,
     create,
@@ -90,3 +90,5 @@ export default {
     cancel,
     remove
 }
+
+export default BookingService

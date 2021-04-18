@@ -24,7 +24,7 @@ const SignInButton = withStyles((theme) => ({
     },
 }))(Button);
 
-export default ({ open, handleClose }) => {
+const SigninForm = ({ open, handleClose }) => {
     const confirm = useConfirm();
     const context = React.useContext(GlobalContext);
 
@@ -142,3 +142,5 @@ export default ({ open, handleClose }) => {
         </>
     )
 }
+
+export default SigninForm

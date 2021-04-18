@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
     },
 }))
 
-export default () => {
+const Footer = () => {
     const data = useStaticQuery(graphql`
         query {
             pattern: file(relativePath: { eq: "pattern.jpg" }) {
@@ -92,4 +92,6 @@ export default () => {
         </footer>
     )
 }
+
+export default Footer
 

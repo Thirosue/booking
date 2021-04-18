@@ -8,7 +8,7 @@ import VisibilityOff from '@material-ui/icons/VisibilityOff';
 import FormControl from '@material-ui/core/FormControl';
 import FormHelperText from '@material-ui/core/FormHelperText';
 
-export default ({ id, name, label, autoComplete, helperText, onChange, error }) => {
+const PasswordFormField = ({ id, name, label, autoComplete, helperText, onChange, error }) => {
     const [values, setValues] = React.useState({
         value: '',
         showPassword: false,
@@ -55,3 +55,5 @@ export default ({ id, name, label, autoComplete, helperText, onChange, error }) 
         </FormControl>
     )
 }
+
+export default PasswordFormField

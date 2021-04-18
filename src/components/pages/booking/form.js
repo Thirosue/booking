@@ -3,7 +3,7 @@ import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import TextField from '@material-ui/core/TextField';
 
-export default ({ register, errors, form }) => {
+const BookingForm = ({ register, errors, form }) => {
 
     React.useEffect(() => {
         console.log(form)
@@ -99,3 +99,5 @@ export default ({ register, errors, form }) => {
         </>
     );
 }
+
+export default BookingForm

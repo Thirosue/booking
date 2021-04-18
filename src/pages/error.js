@@ -1,6 +1,6 @@
 import React from "react"
 
-export default () => {
+const Error = () => {
     return (<>
         <h2 style={{ padding: "20vh 0", textAlign: "center" }}>
             システムエラーが発生しました。<br />
@@ -8,3 +8,5 @@ export default () => {
         </h2>
     </>)
 }
+
+export default Error

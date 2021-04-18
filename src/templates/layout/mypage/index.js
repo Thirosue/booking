@@ -44,7 +44,7 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 
-export default ({ location, children }) => {
+const Index = ({ location, children }) => {
     const classes = useStyles();
     const title = useDocumentTitle(location);
     const [isMobileNavOpen, setMobileNavOpen] = React.useState(false);
@@ -90,3 +90,5 @@ export default ({ location, children }) => {
         </ErrorBoundary>
     )
 }
+
+export default Index

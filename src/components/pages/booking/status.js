@@ -72,7 +72,7 @@ function createData(at, today, tomorrow, daysAfter2, daysAfter3, daysAfter4, day
 
 const start = new Date()
 
-export default ({ handleNext, form }) => {
+const StatusForm = ({ handleNext, form }) => {
     const confirm = useConfirm();
     const device = useDevice();
     const reservationTable = userResavationTable({ start, frame: (form.menu.time + form.off.time) / 30 })
@@ -229,3 +229,5 @@ export default ({ handleNext, form }) => {
         </>
     );
 }
+
+export default StatusForm

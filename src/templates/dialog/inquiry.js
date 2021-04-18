@@ -9,7 +9,7 @@ import FormDialog from "./form"
 import GlobalContext from '../../context/global-context'
 import { createInquiry } from '../../graphql/mutations'
 
-export default ({ open, handleClose }) => {
+const InquiryDialog = ({ open, handleClose }) => {
     const context = React.useContext(GlobalContext);
     const { enqueueSnackbar } = useSnackbar();
 
@@ -112,3 +112,5 @@ export default ({ open, handleClose }) => {
         />
     );
 }
+
+export default InquiryDialog

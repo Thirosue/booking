@@ -171,7 +171,7 @@ const submitMapping = {
     3: book,
 }
 
-export default ({ open, handleClose }) => {
+const Index = ({ open, handleClose }) => {
     const context = React.useContext(GlobalContext);
     const confirm = useConfirm();
     const classes = useStyles();
@@ -283,25 +283,25 @@ export default ({ open, handleClose }) => {
                                         </Typography>
                                     </>
                                 ) : (
-                                        <>
-                                            {getStepContent(handleNext, activeStep, register, errors, form)}
-                                            {1 < activeStep && (
-                                                <div className={classes.buttons}>
-                                                    {activeStep !== 0 && (
-                                                        <Button onClick={handleBack} className={classes.button}>
-                                                            Back
-                                                        </Button>
-                                                    )}
-                                                    <Submit
-                                                        onClick={handleSubmit(handleNext)}
-                                                        className={classes.button}
-                                                    >
-                                                        {activeStep === steps.length - 1 ? 'Confirm' : 'Next'}
-                                                    </Submit>
-                                                </div>
-                                            )}
-                                        </>
-                                    )}
+                                    <>
+                                        {getStepContent(handleNext, activeStep, register, errors, form)}
+                                        {1 < activeStep && (
+                                            <div className={classes.buttons}>
+                                                {activeStep !== 0 && (
+                                                    <Button onClick={handleBack} className={classes.button}>
+                                                        Back
+                                                    </Button>
+                                                )}
+                                                <Submit
+                                                    onClick={handleSubmit(handleNext)}
+                                                    className={classes.button}
+                                                >
+                                                    {activeStep === steps.length - 1 ? 'Confirm' : 'Next'}
+                                                </Submit>
+                                            </div>
+                                        )}
+                                    </>
+                                )}
                             </>
                         </>)}
                 </>)}
@@ -330,3 +330,5 @@ export default ({ open, handleClose }) => {
         />
     );
 }
+
+export default Index

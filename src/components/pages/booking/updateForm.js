@@ -41,7 +41,7 @@ const query = graphql`
   }
 `
 
-export default ({ register, setValue, form }) => {
+const UpdateForm = ({ register, setValue, form }) => {
     const contentful = useStaticQuery(query)
 
     React.useEffect(() => {
@@ -166,3 +166,5 @@ export default ({ register, setValue, form }) => {
         </>
     );
 }
+
+export default UpdateForm

@@ -50,7 +50,7 @@ const query = graphql`
   }
 `
 
-export default ({ handleNext }) => {
+const MenuForm = ({ handleNext }) => {
     const contentful = useStaticQuery(query)
     const classes = useStyles();
 
@@ -133,3 +133,5 @@ export default ({ handleNext }) => {
         )}
     </>);
 }
+
+export default MenuForm

@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 
-export default ({ data }) => {
+const Index = ({ data }) => {
   return (<>
     <section className="hero">
       <figure>
@@ -124,3 +124,5 @@ export const query = graphql`
     }
   }
 `
+
+export default Index

@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-export default ({ processing }) => {
+const Progress = ({ processing }) => {
     const classes = useStyles()
     return (
         <>
@@ -21,3 +21,5 @@ export default ({ processing }) => {
             )}
         </>);
 }
+
+export default Progress

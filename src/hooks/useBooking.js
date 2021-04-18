@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import BookingService from '../services/booking';
 
 // Booking の state と更新ロジックを持つフック
-export default (sub) => {
+const useBooking = (sub) => {
     const [bookings, setBookings] = useState(null);
 
     // このカスタムフックを利用しているコンポーネントがマウントされたら Booking を取得する。
@@ -24,3 +24,5 @@ export default (sub) => {
 
     return { bookings, cancel };
 };
+
+export default useBooking

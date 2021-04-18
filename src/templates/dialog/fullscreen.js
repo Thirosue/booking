@@ -30,7 +30,7 @@ const Action = props => {
     );
 }
 
-export default ({ open, context = {}, handleClose }) => {
+const FullScreenDialog = ({ open, context = {}, handleClose }) => {
     return (
         <>
             <Dialog
@@ -53,3 +53,5 @@ export default ({ open, context = {}, handleClose }) => {
         </>
     );
 }
+
+export default FullScreenDialog

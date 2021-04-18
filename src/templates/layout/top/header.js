@@ -33,7 +33,7 @@ const SignInOutLink = (props) => {
     );
 }
 
-export default () => {
+const Header = () => {
     // const goMypage = () => navigate('/mypage') disable
 
     // For booking
@@ -163,3 +163,5 @@ export default () => {
         </GlobalContext.Consumer>
     )
 }
+
+export default Header
