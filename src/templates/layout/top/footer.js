@@ -1,11 +1,14 @@
 import React from 'react'
 import { graphql, useStaticQuery } from "gatsby"
+import MediaQuery from 'react-responsive'
 import { makeStyles } from '@material-ui/core/styles'
 import Img from "gatsby-image"
 import { Link } from "@material-ui/core"
 import {
     Link as LinkIcon
 } from 'react-feather'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLine, faInstagram } from '@fortawesome/free-brands-svg-icons'
 import useInquiry from '../../../hooks/useInquiry'
 
 const useStyles = makeStyles((theme) => ({
@@ -62,23 +65,19 @@ const Footer = () => {
                     </p>
                 </div>
                 <ul className="sns">
+                    <MediaQuery maxDeviceWidth={767}> {/* iPad以下 */}
+                        <li>
+                            <Link color="inherit" href="https://line.me/R/">
+                                <FontAwesomeIcon icon={faLine} />
+                                <span className="sr-only">LINE</span>
+                            </Link>
+                        </li>
+                    </MediaQuery>
                     <li>
-                        <a href="https://twitter.com/">
-                            <i className="fab fa-twitter" />
-                            <span className="sr-only">Twitter</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://facebook.com/">
-                            <i className="fab fa-facebook-square" />
-                            <span className="sr-only">Facebook</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://instagram.com/">
-                            <i className="fab fa-instagram" />
+                        <Link color="inherit" href="http://instagram.com/">
+                            <FontAwesomeIcon icon={faInstagram} />
                             <span className="sr-only">Instagram</span>
-                        </a>
+                        </Link>
                     </li>
                 </ul>
             </div>
