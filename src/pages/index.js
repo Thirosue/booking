@@ -1,16 +1,15 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image";
 
 const Index = ({ data }) => {
-  return (<>
+  return <>
     <section className="hero">
       <figure>
-        <Img
-          fluid={data.hero.childImageSharp.fluid}
+        <GatsbyImage
+          image={data.hero.childImageSharp.gatsbyImageData}
           alt=""
-          style={{ height: "100%" }}
-        />
+          style={{ height: "100%" }} />
       </figure>
       <div className="catch">
         <h1>
@@ -41,7 +40,7 @@ const Index = ({ data }) => {
         <div className="details">
           <div className="detail">
             <figure>
-              <Img fluid={data.fruit.childImageSharp.fluid} alt="" />
+              <GatsbyImage image={data.fruit.childImageSharp.gatsbyImageData} alt="" />
             </figure>
             <br />
             <p>Hand</p>
@@ -51,7 +50,7 @@ const Index = ({ data }) => {
           </div>
           <div className="detail">
             <figure>
-              <Img fluid={data.grain.childImageSharp.fluid} alt="" />
+              <GatsbyImage image={data.grain.childImageSharp.gatsbyImageData} alt="" />
             </figure>
             <br />
             <p>Foot</p>
@@ -61,7 +60,7 @@ const Index = ({ data }) => {
           </div>
           <div className="detail">
             <figure>
-              <Img fluid={data.beverage.childImageSharp.fluid} alt="" />
+              <GatsbyImage image={data.beverage.childImageSharp.gatsbyImageData} alt="" />
             </figure>
             <br />
             <p>Care</p>
@@ -75,54 +74,42 @@ const Index = ({ data }) => {
     <section className="photo">
       <h2 className="sr-only">Photo</h2>
       <figure>
-        <Img
-          fluid={data.berry.childImageSharp.fluid}
+        <GatsbyImage
+          image={data.berry.childImageSharp.gatsbyImageData}
           alt="赤く熟したベリー"
-          style={{ height: "100%" }}
-        />
+          style={{ height: "100%" }} />
       </figure>
     </section>
-  </>)
+  </>;
 }
 
-export const query = graphql`
-  query {
-    hero: file(relativePath: { eq: "hero.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1600) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    fruit: file(relativePath: { eq: "fruit.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 320) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    grain: file(relativePath: { eq: "grain.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 320) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    beverage: file(relativePath: { eq: "beverage.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 320) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    berry: file(relativePath: { eq: "berry.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1600) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
+export const query = graphql`{
+  hero: file(relativePath: {eq: "hero.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(layout: FULL_WIDTH)
     }
   }
+  fruit: file(relativePath: {eq: "fruit.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(width: 320, layout: CONSTRAINED)
+    }
+  }
+  grain: file(relativePath: {eq: "grain.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(width: 320, layout: CONSTRAINED)
+    }
+  }
+  beverage: file(relativePath: {eq: "beverage.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(width: 320, layout: CONSTRAINED)
+    }
+  }
+  berry: file(relativePath: {eq: "berry.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(layout: FULL_WIDTH)
+    }
+  }
+}
 `
 
 export default Index

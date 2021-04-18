@@ -34,6 +34,7 @@ if (!spaceId || !accessToken) {
 module.exports = {
   /* Your site config here */
   plugins: [
+    `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql, useStaticQuery } from "gatsby"
 import MediaQuery from 'react-responsive'
 import { makeStyles } from '@material-ui/core/styles'
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image";
 import { Link } from "@material-ui/core"
 import {
     Link as LinkIcon
@@ -19,17 +19,14 @@ const useStyles = makeStyles((theme) => ({
 }))
 
 const Footer = () => {
-    const data = useStaticQuery(graphql`
-        query {
-            pattern: file(relativePath: { eq: "pattern.jpg" }) {
-                childImageSharp {
-                  fluid(maxWidth: 1920, quality: 90) {
-                    ...GatsbyImageSharpFluid_withWebp
-                  }
-                }
-            }
-        }
-    `)
+    const data = useStaticQuery(graphql`{
+  pattern: file(relativePath: {eq: "pattern.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(quality: 90, layout: FULL_WIDTH)
+    }
+  }
+}
+`)
 
     const classes = useStyles()
     const inquiry = useInquiry();
@@ -82,14 +79,13 @@ const Footer = () => {
                 </ul>
             </div>
             <div className="back">
-                <Img
-                    fluid={data.pattern.childImageSharp.fluid}
+                <GatsbyImage
+                    image={data.pattern.childImageSharp.gatsbyImageData}
                     alt=""
-                    style={{ height: "100%" }}
-                />
+                    style={{ height: "100%" }} />
             </div>
         </footer>
-    )
+    );
 }
 
 export default Footer
