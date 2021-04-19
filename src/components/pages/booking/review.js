@@ -61,7 +61,7 @@ const ReviewForm = ({ form }) => {
                     <FormControl fullWidth>
                         <InputLabel htmlFor="component-simple">Price</InputLabel>
                         <Box mb="1rem" />
-                        <InputBase id="date" defaultValue={form.priceText} disabled />
+                        <InputBase id="price" defaultValue={form.priceText} disabled />
                     </FormControl>
                 </Grid>
                 <Grid item xs={12} md={12}>
