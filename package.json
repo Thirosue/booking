@@ -52,14 +52,14 @@
     "react-responsive": "8.2.0",
     "uuid": "8.3.2"
   },
-  "devDependencies": {
-    "prettier": "latest"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/Thirosue/booking"
   },
   "bugs": {
     "url": "https://github.com/Thirosue/booking/issues"
+  },
+  "devDependencies": {
+    "prettier": "2.2.1"
   }
 }
