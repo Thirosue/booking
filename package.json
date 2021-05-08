@@ -32,7 +32,7 @@
     "@sentry/serverless": "6.3.5",
     "@sentry/tracing": "6.3.5",
     "aws-amplify": "3.4.0",
-    "date-fns": "2.21.2",
+    "date-fns": "2.21.3",
     "gatsby": "3.4.2",
     "gatsby-image": "3.4.0",
     "gatsby-plugin-google-tagmanager": "3.4.0",
