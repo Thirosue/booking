@@ -61,6 +61,6 @@
     "url": "https://github.com/Thirosue/booking/issues"
   },
   "devDependencies": {
-    "prettier": "2.3.0"
+    "prettier": "2.3.1"
   }
 }
