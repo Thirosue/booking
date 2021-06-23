@@ -42,7 +42,7 @@
     "gatsby-source-contentful": "5.7.1",
     "gatsby-source-filesystem": "3.7.1",
     "gatsby-transformer-sharp": "3.7.1",
-    "google-map-react": "2.1.9",
+    "google-map-react": "2.1.10",
     "moment": "2.29.1",
     "notistack": "1.0.9",
     "react": "17.0.2",
