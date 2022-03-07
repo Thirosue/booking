@@ -41,7 +41,7 @@
     "gatsby-source-contentful": "5.10.0",
     "gatsby-source-filesystem": "3.10.0",
     "gatsby-transformer-sharp": "3.10.0",
-    "gatsby-plugin-material-ui": "3.0.1",
+    "gatsby-plugin-material-ui": "4.1.0",
     "google-map-react": "2.1.10",
     "moment": "2.29.1",
     "notistack": "1.0.9",
