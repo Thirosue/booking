@@ -49,7 +49,7 @@
     "react-dom": "17.0.2",
     "react-feather": "2.0.9",
     "react-helmet": "6.1.0",
-    "react-hook-form": "6.15.8",
+    "react-hook-form": "7.51.2",
     "react-responsive": "8.2.0",
     "uuid": "8.3.2"
   },
